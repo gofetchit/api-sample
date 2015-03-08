@@ -1,0 +1,23 @@
+html
+  head
+    title API SAMPLE
+  body
+    h1 Hello user you have fetches.
+    table
+      tr
+        th ID
+        th Name
+        th Cover letter
+        th Author
+        th Competion
+        th Number of contributors
+        th Number of completions
+      each fetch in fetches
+        tr
+          td= fetch.id
+          td= fetch.name
+          td= fetch.cover_letter
+          td= fetch.user_display_name
+          td= fetch.percent_complete
+          td= fetch.contributor_count
+          td= fetch.completed_contributions_count
