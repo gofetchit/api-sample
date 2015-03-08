@@ -1,0 +1,15 @@
+{
+  "name": "rogr-api-sample",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Markus Kuhnt (mku@rogr.io)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.2",
+    "simple-oauth2": "^0.2.1"
+  }
+}
