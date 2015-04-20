@@ -4,9 +4,9 @@ var express = require('express'),
 app.set('view engine', 'jade');
 
 var oauth2 = require('simple-oauth2')({
-  clientID: 'c5cc4c8a1da708ba688e4d304fdbf0352142c4dd797068a4c4c9606800815c2e',
-  clientSecret: '02ba4165b59ef4f307a0007b5f7e11e9716f1ea198c0a225656f118e90e55dbb',
-  site: 'http://localhost:5000',
+  clientID: process.env.CLIENT_ID,
+  clientSecret: process.env.CLIENT_SECRET,
+  site: 'https://www.rogr.io',
   tokenPath: '/oauth/token'
 });
 
