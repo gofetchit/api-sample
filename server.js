@@ -1,3 +1,5 @@
+/// <reference path="typings/node/node.d.ts"/>
+
 var express = require('express'),
     app = express();
 
@@ -19,6 +21,8 @@ var authorization_uri = oauth2.authCode.authorizeURL({
 app.get('/auth', function (req, res) {
     res.redirect(authorization_uri);
 });
+
+var token;
 
 // Callback service parsing the authorization token and asking for the access token
 app.get('/callback', function (req, res) {
